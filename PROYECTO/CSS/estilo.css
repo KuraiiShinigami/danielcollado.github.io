@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+/* con esto quito el scroll */
+::-webkit-scrollbar{
+    display: none;
+}
+/*  quito margenes y paddings raros, y pongo la letra */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/*  cabecera */
+#cabecera {
+
+    background: url("../FOTOS/cabecera4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-position: 100%;
+    /* transform: scaleX(-1); */
+
+}
+
+
+/* nav, .nav, navbar-expand-lg{
+    padding: 0px !important;
+} */
+
+header {
+    height: 100vh;
+}
+
+/* seccion foto flotante */
+#Fotflota {
+    position: relative;
+}
+
+#Fotflota img {
+    position: absolute;
+    left: 120px;
+}
+
+#presen {
+    position: relative;
+}
+
+#presen div {
+    position: absolute;
+    top: 90px;
+}
+
+.cust-bg {
+    position: relative;
+    background-color: #F6F6F6;
+    height: 65vh;
+
+}
+
+.cust-bg h2 {
+    font-size: 35px !important;
+}
+
+.cust-bg p {
+    font-size: 20px;
+    color: #646464;
+}
+
+.cust-bg img {
+    width: 350px;
+    position: absolute;
+    top: 50px;
+    left: -16%;
+}
+/* en pantalla media modifico el tamaño de la imagen */
+@media only screen and (max-width: 768px) {
+    #yo2 {
+        width: 180px;
+
+    }
+
+}
+/* SKILLS */
+.icono div img:hover {
+    transform: rotateX(360deg);
+    transition: 1.5s;
+}
+
+.portatiles img:hover {
+    src: url("../dibujos\ paginas.jpg")
+}
+
+#contact {
+    height: 100vh;
+    /* background-color: rgba(235, 235, 235, 100%); */
+    background: linear-gradient(rgba(235, 235, 235, 100%), white);
+}
+
+#contact p {
+    font-size: 30px !important;
+    font-weight: bold;
+}
+
+#contact h2 {
+    font-size: 50px !important;
+    font-weight: bold;
+}
+
+#formu {
+    background-color: rgba(235, 235, 235, 100%);
+    min-height: 60vh;
+
+}
+
+#formu input {
+    background-color: rgba(235, 235, 235, 100%);
+    border: 0px;
+    /* width: 80%; */
+
+}
+
+#formu textarea {
+    background-color: rgba(235, 235, 235, 100%);
+    border: 0px;
+
+}
+
+
+
+#subir {
+
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 60px;
+    border-radius: 2150px ;
+    background-color:rgba(235, 235, 235, 10%);
+    opacity: 50%;
+
+
+
+}
+
+#subir:hover{
+    background-color:rgba(235, 235, 235,100%);
+    opacity: 100%;
+
+}
+
+/* Parche AOS */
+
+.circulos{
+    overflow: hidden;
+}
+.contacto{
+    overflow: hidden;
+}
